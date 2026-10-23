@@ -1,0 +1,57 @@
+# Napravi dir.
+mkdir me_project
+cd me_project
+
+# Napravi nesto u njemu, cisto za igranje. 
+touch index.html style.css
+
+# Napravi lokalni git repo u direktoriju.
+git init
+
+# minimal config
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+# save, track files
+# (tracked vs untracked files, staging)
+git add .     # Prati sve u direktoriju.
+git add file_name   #Prati specifican file
+
+# status
+git status
+
+# pohrani
+git commit -m "poruka ili komentar"
+git commit -m "naslov" -m "description"
+
+# logovi
+git log
+
+# Vrati se na prethodnu tocku
+git checkout <commit id> iz git loga
+git checkout 2cfc64f91f4553e65a6915d07dbaedfc66990b21
+
+# Connecting to github
+
+git remote add origin <url.git>
+
+# upload, ako smo povezani na github
+git push -u origin master
+
+# Branch
+git branch
+
+By default, all code is on main(master) branch.
+# make new branch
+git checkout -b ime
+
+Promjene koje napravimo u novom branchu, nece utjecati na main code.
+git push origin new-branch
+
+# merge?
+
+# pull
+git pull origin master
+
+# Clone
+git clone <url.git>
