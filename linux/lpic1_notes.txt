@@ -1,0 +1,72 @@
+# Ovo je basic CLI cheatsheet
+
+# Basic syntaxa
+<command> <option> <argument>
+
+pwd
+
+# Listing directory content
+ls
+man ls
+ls --help
+ls -l
+ls -l -a
+ls -lah
+ls -l /home/username/documents
+
+# Basic navigation
+cd --help
+cd /home/username (Absolute path)
+cd documents (Relative path)
+cd ..
+cd ~
+
+\ root dir
+~ home dir
+. current dir
+.. parrent dir
+
+# Getting help
+man <command>
+man ls
+<command> --help
+ls --help
+
+
+cat
+
+# 101.1 Determine and configure hardware settings
+man uname
+uname -a
+
+dmesg - print or control the kernel ring buffer
+sudo dmesg
+
+lscpu
+
+/dev
+sda
+sda1
+
+udev
+
+/proc
+cat /proc/modules
+
+lsmod
+modinfo
+modinfo -d <mod_name>
+
+modprobe
+modprobe -r <mod_name>
+modprobe <mod_name>
+
+sudo rmmod <mod_name>
+sudo insmod </full_path/to/mod_name.ko>
+
+lspci
+lsusb
+
+
+# 101.2 Boot the system 
+
