@@ -1,19 +1,22 @@
+# LPIC 1 
 # Ovo je basic CLI cheatsheet
 
 # Basic syntaxa
 <command> <option> <argument>
 
-pwd
-
+pwd - print name of current/working directory
+----------
 # Listing directory content
-ls
+ls - list directory contents
 man ls
 ls --help
+
 ls -l
 ls -l -a
 ls -lah
 ls -l /home/username/documents
 
+----------
 # Basic navigation
 cd --help
 cd /home/username (Absolute path)
@@ -25,15 +28,31 @@ cd ~
 ~ home dir
 . current dir
 .. parrent dir
-
+----------
 # Getting help
 man <command>
 man ls
 <command> --help
 ls --help
+----------
+# Read files
+cat - concatenate files and print on the standard output
+cat filename.txt
 
+# More commands for reading file content.
+more - file perusal filter for crt viewing
+more /var/log/auth.log
 
-cat
+less - opposite of more
+less /var/log/auth.log
+# moze pretrazivati sa /pojam
+
+head - output the first part of files
+head -n 5 filename
+
+tail - output the last part of filesl
+tail -n 10 -f /var/log/auth.log )Moze pratiti u zivo promjene sa -f)
+----------
 
 # 101.1 Determine and configure hardware settings
 man uname
